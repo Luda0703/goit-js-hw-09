@@ -11,11 +11,7 @@ let timerId = null;
 
 function onStartColor() {
     timerId = setInterval(getBgColor, 1000);
-    // if(!isActive) {
-    //     dataStart.toggleAttribute('disabled');
-    // } else {
-    //     delete(dataStart.toggleAttribute('disabled'));
-    // }
+    
     dataStart.disabled = true
     if(dataStart.disabled) {
         dataStop.disabled = false
@@ -25,11 +21,7 @@ function onStartColor() {
 
 function onStopColor() {
     clearInterval(timerId);
-    // if(!isActive) {
-    //     dataStop.toggleAttribute('disabled');
-    // } else {
-    //     delete(dataStart.toggleAttribute('disabled'));
-    // }
+    
     dataStop.disabled = true
     if(dataStop.disabled) {
         dataStart.disabled = false
